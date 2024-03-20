@@ -1,0 +1,1 @@
+[Planszówkowy player]("Planszówkowy player.md")
