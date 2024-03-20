@@ -1,1 +1,1 @@
-[Planszówkowy player](Planszówkowy-player.md) [aaaa]()
+[Planszówkowy player](Planszówkowy-player.md)
