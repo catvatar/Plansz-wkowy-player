@@ -1,1 +1,1 @@
-[Planszówkowy player]("Planszówkowy player.md")
+[Planszówkowy player](Planszówkowy-player.md) [aaaa]()
