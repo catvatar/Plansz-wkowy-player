@@ -32,4 +32,4 @@ cargo build
 cargo run
 ```
 
-> First `cargo build` usually takes around 8 minutes, be patience.
+> First `cargo build` usually takes around 8 minutes, be patient.
