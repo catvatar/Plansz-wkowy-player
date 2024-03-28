@@ -1,0 +1,37 @@
+[package]
+name = "esprs"
+version = "0.1.0"
+authors = ["Olek Gogol <olekgogol@gmail.com>"]
+edition = "2021"
+resolver = "2"
+rust-version = "1.71"
+
+[profile.release]
+opt-level = 3
+
+[profile.dev]
+debug = true    # Symbols are nice and they don't increase the size on Flash
+opt-level = 3
+
+[features]
+default = ["std", "embassy", "esp-idf-svc/native"]
+
+pio = ["esp-idf-svc/pio"]
+std = ["alloc", "esp-idf-svc/binstart", "esp-idf-svc/std"]
+alloc = ["esp-idf-svc/alloc"]
+nightly = ["esp-idf-svc/nightly"]
+experimental = ["esp-idf-svc/experimental"]
+embassy = ["esp-idf-svc/embassy-sync", "esp-idf-svc/critical-section", "esp-idf-svc/embassy-time-driver"]
+
+[dependencies]
+log = { version = "0.4", default-features = false }
+esp-idf-svc = { version = "0.48", default-features = false }
+anyhow = "1.0.81"
+debouncr = "0.2.2"
+esp-idf-hal = "0.43.1"
+async-io = "2.3.2"
+embedded-svc = "0.27.1"
+heapless = "0.8.0"
+
+[build-dependencies]
+embuild = "0.31.3"
